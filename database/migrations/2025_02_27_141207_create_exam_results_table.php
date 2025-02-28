@@ -17,10 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('course_id');
             $table->string('marks',45);
 
-            // Foreign key constraint
-            $table->foreign('exam_id')->references('id')->on('exams')->onDelete('cascade');
-            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
+    
 
         });
     }

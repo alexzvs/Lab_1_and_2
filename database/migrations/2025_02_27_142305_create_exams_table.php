@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('name', 45);
             $table->date('date');
 
-            // Foreign key constraint
-            $table->foreign('exam_type_id')->references('id')->on('exam_type')->onDelete('cascade');
         });
     }
 

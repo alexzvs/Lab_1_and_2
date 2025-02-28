@@ -17,9 +17,6 @@ return new class extends Migration
             $table->boolean('status')->default(1);
             $table->text('remark');
 
-            // Foreign key constraint
-            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-
         });
     }
 
